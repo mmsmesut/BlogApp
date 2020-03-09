@@ -1,7 +1,7 @@
 ﻿@* Bu kısım ilk anda bomboş gelecek, Partial view olduğu için ,Bu kısım makale listeleme kısmı olacak*@
 
-@using BlogApp.Models
-@model IEnumerable<Article>
+@using BlogApp.Data.Models
+@model IEnumerable<BlogApp.Data.Models.Article>
 
 @* Bir Helper tanımlıyoruz ,Girilen karakter sayısı 300'den fazla ise ilk 300 karakteri alacaktır *@
 @helper ShortenContent(string data)

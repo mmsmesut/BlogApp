@@ -70,7 +70,6 @@ D:\MYPROJECTS\BlogApp\BlogApp\bin\System.Web.Webpages.Razor.xml
 D:\MYPROJECTS\BlogApp\BlogApp\bin\System.Web.Helpers.xml
 D:\MYPROJECTS\BlogApp\BlogApp\bin\System.Web.Mvc.xml
 D:\MYPROJECTS\BlogApp\BlogApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\MYPROJECTS\BlogApp\BlogApp\obj\Debug\BlogApp.csprojAssemblyReference.cache
 D:\MYPROJECTS\BlogApp\BlogApp\obj\Debug\BlogApp.csproj.CoreCompileInputs.cache
 D:\MYPROJECTS\BlogApp\BlogApp\obj\Debug\BlogApp.csproj.CopyComplete
 D:\MYPROJECTS\BlogApp\BlogApp\obj\Debug\BlogApp.dll
@@ -79,3 +78,7 @@ D:\MYPROJECTS\BlogApp\BlogApp\bin\EntityFramework.dll
 D:\MYPROJECTS\BlogApp\BlogApp\bin\EntityFramework.SqlServer.dll
 D:\MYPROJECTS\BlogApp\BlogApp\bin\EntityFramework.xml
 D:\MYPROJECTS\BlogApp\BlogApp\bin\EntityFramework.SqlServer.xml
+D:\MYPROJECTS\BlogApp\BlogApp\obj\Debug\BlogApp.csprojAssemblyReference.cache
+D:\MYPROJECTS\BlogApp\BlogApp\bin\BlogApp.Data.dll
+D:\MYPROJECTS\BlogApp\BlogApp\bin\BlogApp.Data.pdb
+D:\MYPROJECTS\BlogApp\BlogApp\bin\BlogApp.Data.dll.config

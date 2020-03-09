@@ -1,0 +1,11 @@
+D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CoreCompileInputs.cache
+D:\MYPROJECTS\BlogApp\BlogApp.Data\bin\Debug\BlogApp.Data.dll.config
+D:\MYPROJECTS\BlogApp\BlogApp.Data\bin\Debug\BlogApp.Data.dll
+D:\MYPROJECTS\BlogApp\BlogApp.Data\bin\Debug\BlogApp.Data.pdb
+D:\MYPROJECTS\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.dll
+D:\MYPROJECTS\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\MYPROJECTS\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.xml
+D:\MYPROJECTS\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CopyComplete
+D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.dll
+D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.pdb

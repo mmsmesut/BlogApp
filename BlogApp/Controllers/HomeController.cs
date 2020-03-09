@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using BlogApp.Models;
+
 
 namespace BlogApp.Controllers
 {
-    public class HomeController : Controller
-    {
-
-        BlogModelDbContext db = new BlogModelDbContext();
-
+    public class HomeController : BaseController
+    {        
         // GET: Home
         public ActionResult Index()
         {
+            //var data = Db.Database.SqlQuery<Category>("Select * from Category").ToList();
+            //var count = data.Count;
             return View();
         }
 
@@ -30,14 +29,18 @@ namespace BlogApp.Controllers
 
         public ActionResult Articlelist()
         {
-            var aList = db.Articles.ToList();
-            return View("MakaleListelePartial", "Shared", aList);
+            //var aList = Db.Articles.ToList();
+
+            var catList = Service.CategoryManager.GetAllCategories();
+
+            return View("MakaleListelePartial", "Shared", catList);
 
         }
 
 
         public PartialViewResult PopularArticlesPartial() {
-            var lastFiveArticles = db.Articles.OrderByDescending(x => x.CreateDate).Take(5);
+            //var lastFiveArticles = Db.Articles.OrderByDescending(x => x.CreateDate).Take(5);
+            var lastFiveArticles = Service.ArticleManager.GetPopularArticles();
             return PartialView(lastFiveArticles);
         }
     }

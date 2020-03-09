@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace BlogApp.Controllers
 {
-    public class SearchController : Controller
+    public class SearchController : BaseController
     {
         // GET: Search
         public ActionResult Index()
