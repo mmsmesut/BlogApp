@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+@*  Home içinde bulunan , "ArticleListPartial" adlı action'ı çağırır  
+@{
+    Html.RenderAction("ArticleListPartial");
+}
+
+
+@* Aşağıdaki şekilde yaparsak konumlandırmadan ekle ama bizim buna bir konum vermemezi gerekecektir
+    @{
+        Html.RenderAction("KategoriPartial","Category");
+    }
+
+*@
+
+
+@section Arama {
+    @{
+        Html.RenderAction("SearchPartial", "Search");
+    }
+}
+
+@section Kategoriler{
+    @{
+        Html.RenderAction("KategoriPartial", "Category");
+    }
+}
+
+@section Etiketler{
+    @{
+        Html.RenderAction("TagPartialView", "Tag");
+    }
+}
+
+@section SiteHakkinda{
+    @{
+        Html.RenderPartial("SiteHakkinda");
+    }
+}
+
+@section PopulerMakaleler{
+   @{ 
+       Html.RenderAction("PopularArticlesPartial");
+   }
+      
+}
+
+
+ 

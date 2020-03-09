@@ -1,0 +1,14 @@
+﻿
+@using BlogApp.Models
+@model IEnumerable<Tag>
+
+<div class="sidebox widget">
+    <h3 class="widget-title section-title">Etiketler</h3>
+    <ul class="tag-list">
+        @foreach (Tag tag in Model)
+        {
+            <li><a href="#">@tag.Adi (@tag.Articles.Count)</a></li>
+
+        }
+    </ul>
+</div>

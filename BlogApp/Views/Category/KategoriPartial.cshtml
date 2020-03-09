@@ -1,0 +1,16 @@
+﻿
+@using  BlogApp.Models
+@model IEnumerable<Category>
+
+<div class="sidebox widget">
+    <h3 class="widget-title section-title">Kategoriler</h3>
+    <ul class="circled">
+        @foreach (Category cat in Model)
+        {
+            <li><a href="#">@cat.Name (@cat.Articles.Count)</a></li>
+        }
+    </ul>
+</div>
+
+
+@* Yukarıda category getiren kodlar bulunmaktadı bizim bunu Home , controller'ı içinde bulunan index Action'ın view'inde göstermemzi gerecek *@

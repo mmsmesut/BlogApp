@@ -1,0 +1,50 @@
+﻿@* Bu kısım ilk anda bomboş gelecek, Partial view olduğu için ,Bu kısım makale listeleme kısmı olacak*@
+
+@using BlogApp.Models
+@model IEnumerable<Article>
+
+@* Bir Helper tanımlıyoruz ,Girilen karakter sayısı 300'den fazla ise ilk 300 karakteri alacaktır *@
+@helper ShortenContent(string data)
+{
+    if (data.Length > 300)
+    {
+        @data.Substring(0, 300)
+    }
+    else
+    {
+        @data
+    }
+}
+
+<div class="blog-posts col-blog">
+    @foreach (Article article in Model)
+    {
+        <div class="post row">
+            <div class="col-sm-4">
+                <figure>
+                    <a href="blog-post.html">
+                        <div class="text-overlay">
+                            <div class="info"><span>Tamamını Oku</span></div>
+                        </div>
+                        <img src="style/images/art/b1.jpg" alt="" />
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8 post-content">
+                <div class="meta">
+                    <span class="date">@article.CreateDate.ToShortDateString()</span>
+                    <span class="comments">
+                        <a href="#">
+                            @article.Comments.Count
+                            <i class="icon-chat-1"></i>
+                        </a>
+                    </span>
+                </div>
+                <h2 class="post-title"><a href="blog-post.html">@article.Header</a></h2>
+                <p>
+                    @ShortenContent(article.Content)
+                </p>
+            </div>
+        </div>
+    }
+</div>
