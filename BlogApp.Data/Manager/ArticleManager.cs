@@ -21,5 +21,28 @@ namespace BlogApp.Data.Manager
 
             return _Context.Database.SqlQuery<Article>("Select * from Articles").ToList();
         }
+
+        public List<Article> GetArticlesByCategory(ArticleFilter filter=null) {
+
+            string sqlQuery = @"
+                               Declare @CategoryId INT  = {0}
+                               Select * from Article 
+                               Where CategoryId = @CategoryId";
+
+            return _Context.Database.SqlQuery<Article>(sqlQuery, filter.Category.CategoriId).ToList();   
+        }
+
+
+        public List<Article> GetArticlesByAuthor(ArticleFilter filter = null)
+        {
+
+            string sqlQuery = @"
+                               Declare @AuthorId INT  = {0}
+                               Select * from Article 
+                               Where CategoryId = @AuthorId";
+
+            return _Context.Database.SqlQuery<Article>(sqlQuery, filter.UserId).ToList();
+        }
+
     }
 }

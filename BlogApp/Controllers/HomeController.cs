@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BlogApp.Data.Manager;
+using BlogApp.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -42,6 +44,12 @@ namespace BlogApp.Controllers
             //var lastFiveArticles = Db.Articles.OrderByDescending(x => x.CreateDate).Take(5);
             var lastFiveArticles = Service.ArticleManager.GetPopularArticles();
             return PartialView(lastFiveArticles);
+        }
+
+
+        public List<Article> GetArticlesByCategory(ArticleFilter filter=null) {
+            var data = Service.ArticleManager.GetArticlesByCategory(filter);
+            return data;
         }
     }
 }
