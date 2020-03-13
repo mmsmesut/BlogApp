@@ -7,7 +7,7 @@
     <ul class="tag-list">
         @foreach (Tag tag in Model)
         {
-            <li><a href="#">@tag.Adi (@tag.Articles.Count)</a></li>
+            <li><a href="/Tag/Index/@tag.TagId">@tag.Adi (@tag.Articles.Count)</a></li>
 
         }
     </ul>

@@ -1,22 +1,15 @@
-﻿
+﻿@using BlogApp.Data.Models
+@model List<Article>
+
 @{
     ViewBag.Title = "Index";
 }
 
 
-
-@*  Home içinde bulunan , "ArticleListPartial" adlı action'ı çağırır  
 @{
-    Html.RenderAction("ArticleListPartial");
+
+    Html.RenderPartial("ArticleListPartial", Model);
 }
-
-
-@* Aşağıdaki şekilde yaparsak konumlandırmadan ekle ama bizim buna bir konum vermemezi gerekecektir
-    @{
-        Html.RenderAction("KategoriPartial","Category");
-    }
-
-*@
 
 
 @section Arama {
@@ -44,11 +37,9 @@
 }
 
 @section PopulerMakaleler{
-   @{ 
-       Html.RenderAction("PopularArticlesPartial");
-   }
-      
+    @{
+        Html.RenderAction("PopularArticlesPartial");
+    }
+
 }
 
-
- 

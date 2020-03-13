@@ -363,13 +363,12 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\ArticleListPartial.cshtml" />
     <Content Include="Views\Category\KategoriPartial.cshtml" />
     <Content Include="Views\Tag\TagPartialView.cshtml" />
     <Content Include="Views\Search\SearchPartial.cshtml" />
     <Content Include="Views\Home\SiteHakkinda.cshtml" />
     <Content Include="Views\Home\PopularArticlesPartial.cshtml" />
-    <Content Include="Views\Shared\MakaleListelePartial.cshtml" />
+    <Content Include="Views\Shared\ArticleListPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

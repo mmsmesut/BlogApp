@@ -9,3 +9,4 @@ D:\MYPROJECTS\BlogApp\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CopyComplete
 D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.dll
 D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.pdb
+D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csprojAssemblyReference.cache

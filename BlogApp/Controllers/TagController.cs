@@ -9,9 +9,7 @@ namespace BlogApp.Controllers
 {
     public class TagController : BaseController
     {
-
-        //BlogModelDbContext db = new BlogModelDbContext();
-
+        
         // GET: Tag
         public ActionResult Index()
         {

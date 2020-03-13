@@ -16,10 +16,17 @@ namespace BlogApp.Data.Manager
         }
 
 
+
+        public List<Article> GetArticles()
+        {        
+            return _Context.Database.SqlQuery<Article>("Select * from Article ").ToList();
+        }
+
+
         public List<Article> GetPopularArticles() {
             //return _Context.Articles.OrderByDescending(x => x.CreateDate).Take(4).ToList();
 
-            return _Context.Database.SqlQuery<Article>("Select * from Articles").ToList();
+            return _Context.Database.SqlQuery<Article>("Select * from Article").ToList();
         }
 
         public List<Article> GetArticlesByCategory(ArticleFilter filter=null) {
