@@ -4,30 +4,8 @@
 @{
     ViewBag.Title = "Index";
 }
-
-
 @{
-
     Html.RenderPartial("ArticleListPartial", Model);
-}
-
-
-@section Arama {
-    @{
-        Html.RenderAction("SearchPartial", "Search");
-    }
-}
-
-@section Kategoriler{
-    @{
-        Html.RenderAction("KategoriPartial", "Category");
-    }
-}
-
-@section Etiketler{
-    @{
-        Html.RenderAction("TagPartialView", "Tag");
-    }
 }
 
 @section SiteHakkinda{
@@ -36,10 +14,20 @@
     }
 }
 
+@*@section Kategoriler{
+    @{
+        Html.RenderAction("KategoriPartial", "Category");
+    }
+}
+@section Etiketler{
+    @{
+        Html.RenderAction("TagPartialView", "Tag");
+    }
+}
+
 @section PopulerMakaleler{
     @{
         Html.RenderAction("PopularArticlesPartial");
     }
-
-}
+}*@
 

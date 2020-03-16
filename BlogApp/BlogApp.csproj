@@ -319,7 +319,6 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\TagController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -365,11 +364,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Category\KategoriPartial.cshtml" />
     <Content Include="Views\Tag\TagPartialView.cshtml" />
-    <Content Include="Views\Search\SearchPartial.cshtml" />
     <Content Include="Views\Home\SiteHakkinda.cshtml" />
     <Content Include="Views\Home\PopularArticlesPartial.cshtml" />
     <Content Include="Views\Shared\ArticleListPartial.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Shared\SearchPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

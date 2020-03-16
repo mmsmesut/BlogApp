@@ -32,7 +32,7 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
           <![endif]-->
 
-    @RenderSection("headSection",false)
+    @RenderSection("headSection", false)
 </head>
 <body>
     <div id="preloader">
@@ -130,24 +130,25 @@
 
                 <!-- Makalelerin lsitelendiği alan  -->
                 <div class="col-sm-8 content">          
-                        @RenderBody()
+                    @RenderBody()
                 </div>
                     <!-- /.content -->
                     <!-- Sağ taraf -->
                 <aside class="col-sm-4 sidebar lp30">
-
-                    @RenderSection("PopulerMakaleler", false)
-
+                    @*@RenderSection("PopulerMakaleler", false)*@
+                    @Html.Action("PopularArticlesPartial", "Home");
                     <!-- /.widget -->
-
                     @RenderSection("SiteHakkinda", false)
-
                     <!-- /.widget -->
-                    @RenderSection("Arama", false)
+                    @*@RenderSection("Arama", false)*@
+                    @*@{Html.RenderPartial("SearchPartial");}*@
+                    @Html.Partial("SearchPartial");
                     <!-- /.widget -->
-                    @RenderSection("Kategoriler", false)
+                    @*@RenderSection("Kategoriler", false)*@
+                    @Html.Action("KategoriPartial", "Category");
                     <!-- /.widget -->
-                    @RenderSection("Etiketler", false)
+                    @*@RenderSection("Etiketler", false)*@
+                    @Html.Action("TagPartialView", "Tag");
                     <!-- /.widget -->
                 </aside>
                 <!-- /.col-sm-4 .sidebar -->
