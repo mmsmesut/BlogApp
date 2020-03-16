@@ -17,8 +17,8 @@ namespace BlogApp.Controllers
             return View(id);
         }
 
-        public PartialViewResult ArticleList(int id) {
-            List<Article> data = Service.TagManager.GeyAllArticleByTag(id);
+        public PartialViewResult ArticleList(int tagId) {
+            List<Article> data = Service.TagManager.GeyAllArticleByTag(tagId);
             return PartialView("ArticleListPartial", data);
         }
 
