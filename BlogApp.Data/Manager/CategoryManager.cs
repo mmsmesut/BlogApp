@@ -17,5 +17,9 @@ namespace BlogApp.Data.Manager
             return _Context.Categories.ToList();
         }
 
+        public List<Article> GeyAllArticleByCategory(int id) {
+            return _Context.Articles.Where(a => a.CategoryId == id).ToList();
+        }
+
     }
 }

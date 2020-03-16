@@ -12,8 +12,8 @@ namespace BlogApp.AppClasses
         public static Size ImageSmallSize {
             get {
                 Size sSize = new Size();
-                sSize.Width = Convert.ToInt32(ConfigurationManager.AppSettings["sw"]);
-                sSize.Height = Convert.ToInt32(ConfigurationManager.AppSettings["sh"]);
+                sSize.Width = Convert.ToInt32(ConfigurationManager.AppSettings["ImgSmallWidth"]);
+                sSize.Height = Convert.ToInt32(ConfigurationManager.AppSettings["ImgSmallHeight"]);
                 return sSize;
             }
         }
@@ -21,8 +21,8 @@ namespace BlogApp.AppClasses
         public static Size ImageMediumSize {
             get {
                 Size mSize = new Size();
-                mSize.Width = Convert.ToInt32(ConfigurationManager.AppSettings["mw"]);
-                mSize.Height = Convert.ToInt32(ConfigurationManager.AppSettings["mh"]);
+                mSize.Width = Convert.ToInt32(ConfigurationManager.AppSettings["ImgMediumWidth"]);
+                mSize.Height = Convert.ToInt32(ConfigurationManager.AppSettings["ImgMediumHeight"]);
                 return mSize;
             }
         }
@@ -30,8 +30,8 @@ namespace BlogApp.AppClasses
         public static Size ImageLargeSize {
             get {
                 Size lSize = new Size();
-                lSize.Width = Convert.ToInt32(ConfigurationManager.AppSettings["lw"]);
-                lSize.Height = Convert.ToInt32(ConfigurationManager.AppSettings["lh"]);
+                lSize.Width = Convert.ToInt32(ConfigurationManager.AppSettings["ImgLargeWidth"]);
+                lSize.Height = Convert.ToInt32(ConfigurationManager.AppSettings["ImgLargeHeight"]);
                 return lSize;
             }
         }

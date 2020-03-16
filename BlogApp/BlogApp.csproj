@@ -369,6 +369,7 @@
     <Content Include="Views\Home\SiteHakkinda.cshtml" />
     <Content Include="Views\Home\PopularArticlesPartial.cshtml" />
     <Content Include="Views\Shared\ArticleListPartial.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

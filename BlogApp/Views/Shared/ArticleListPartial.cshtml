@@ -8,40 +8,24 @@
             <div class="col-sm-4">
                 <figure>
                     <a href="/Article/Detail/@article.ArticleId">
-                        <div class="text-overlay">
-                            <div class="info">
-                                <span>Daha Fazla</span>
-                            </div>
-                        </div>
-                        @if (@article.Image != null)
-                        {
-                            <img src="@article.Image.MediumSize" alt="" />
-                        }
+                        <div class="text-overlay"><div class="info"><span>Daha Fazla</span></div></div>
+                        @if (@article.Image != null){<img src="@article.Image.MediumSize" alt="" />}
                     </a>
                 </figure>
             </div>
             <div class="col-sm-8 post-content">
-                    <div class="meta">
-                        <span class="date">@article.CreateDate.ToShortDateString()</span>
-                        <span class="comments">
-                            <a href="#">
-                                @if (@article.Comments != null)
-                                {
-                                    @article.Comments.Count
-                                    <i class="icon-chat-1"></i>
-                                }
-
-                            </a>
-                        </span>
-                    </div>
-                    <h2 class="post-title">
-                        <a href="blog-post.html">
-                            @article.Header
+                <div class="meta">
+                    <span class="date">@article.CreateDate.ToShortDateString()</span>
+                    <span class="comments">
+                        <a href="#">
+                            @if (@article.Comments != null){ @article.Comments.Count <i class="icon-chat-1"></i>}
                         </a>
-                    </h2>
-                    <p>@Helper.ShortenContent(article.Content)</p>
-                </div>*
+                    </span>
+                </div>
+                <h2 class="post-title">
+                    <a href="blog-post.html">@article.Header</a></h2>
+                <p>@Helper.ShortenContent(article.Content)</p>
+            </div>
         </div>
     }
-
 </div>

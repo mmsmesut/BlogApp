@@ -10,11 +10,18 @@ namespace BlogApp.Controllers
     public class CategoryController : BaseController 
     {       
         // GET: Category
-        public ActionResult Index()
-        {
-            
-            return View();
+        public ActionResult Index(int id)
+        {            
+            return View(id);
         }
+
+        public PartialViewResult ArticleList(int id) {
+
+            var data = Service.CategoryManager.GeyAllArticleByCategory(id);
+            return PartialView("ArticleListPartial",data);
+        }
+
+
 
         public PartialViewResult KategoriPartial() {
             //var list = Db.Categories.ToList();

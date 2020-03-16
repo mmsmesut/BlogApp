@@ -13,13 +13,15 @@ namespace BlogApp.Controllers
     {        
         // GET: Home
         public ActionResult Index()
-        {
-            //var data = Db.Database.SqlQuery<Category>("Select * from Category").ToList();
-            //var count = data.Count;
-
+        {                   
             List<Article> data = Service.ArticleManager.GetArticles();            
             return View(data);
         }
+
+        //public ActionResult GetArticles() {
+        //    List<Article> data = Service.ArticleManager.GetArticles();
+        //    return View("ArticleListPartial", data);
+        //}
 
         public PartialViewResult PopularArticlesPartial()
         {

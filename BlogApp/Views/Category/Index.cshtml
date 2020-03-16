@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@*@{
+    Html.RenderAction("ArticleList", new { id = Model });
+}*@
+
+@Html.Action("ArticleList", new { id = Model });
