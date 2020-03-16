@@ -15,5 +15,18 @@ namespace BlogApp.Data.Manager
         public List<Tag> GetAllTags() {
             return _Context.Tags.ToList();
         }
+
+        public List<Article> GeyAllArticleByTag(int id)
+        {
+            //return _Context.Articles.Where(a => a.Tags.Any(t=>t.TagId==id)).ToList();
+
+            string sqlQuery = @"
+                                  declare @tagId INT = {0}
+                                  Select * from Article a
+                                  inner join ArticleTag t
+                                  on a.ArticleId = t.ArticleId
+                                  and t.TagId=@tagId";
+            return _Context.Database.SqlQuery<Article>(sqlQuery, id).ToList();
+        }
     }
 }

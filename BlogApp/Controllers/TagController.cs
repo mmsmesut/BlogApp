@@ -1,4 +1,5 @@
 ﻿
+using BlogApp.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,14 @@ namespace BlogApp.Controllers
     {
         
         // GET: Tag
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View();
+            return View(id);
+        }
+
+        public PartialViewResult ArticleList(int id) {
+            List<Article> data = Service.TagManager.GeyAllArticleByTag(id);
+            return PartialView("ArticleListPartial", data);
         }
 
         public PartialViewResult TagPartialView() {

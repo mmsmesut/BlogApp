@@ -369,6 +369,7 @@
     <Content Include="Views\Shared\ArticleListPartial.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Shared\SearchPartial.cshtml" />
+    <Content Include="Views\Tag\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
