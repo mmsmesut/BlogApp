@@ -22,3 +22,15 @@ D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CoreCompileInputs.cache
 D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CopyComplete
 D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.dll
 D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.pdb
+D:\MyDevelop\LastGithub\BlogApp.Data\bin\Debug\BlogApp.Data.dll.config
+D:\MyDevelop\LastGithub\BlogApp.Data\bin\Debug\BlogApp.Data.dll
+D:\MyDevelop\LastGithub\BlogApp.Data\bin\Debug\BlogApp.Data.pdb
+D:\MyDevelop\LastGithub\BlogApp.Data\bin\Debug\EntityFramework.dll
+D:\MyDevelop\LastGithub\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyDevelop\LastGithub\BlogApp.Data\bin\Debug\EntityFramework.xml
+D:\MyDevelop\LastGithub\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyDevelop\LastGithub\BlogApp.Data\obj\Debug\BlogApp.Data.csprojAssemblyReference.cache
+D:\MyDevelop\LastGithub\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CoreCompileInputs.cache
+D:\MyDevelop\LastGithub\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CopyComplete
+D:\MyDevelop\LastGithub\BlogApp.Data\obj\Debug\BlogApp.Data.dll
+D:\MyDevelop\LastGithub\BlogApp.Data\obj\Debug\BlogApp.Data.pdb
