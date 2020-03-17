@@ -10,3 +10,15 @@ D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CopyComplete
 D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.dll
 D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.pdb
 D:\MYPROJECTS\BlogApp\BlogApp.Data\obj\Debug\BlogApp.Data.csprojAssemblyReference.cache
+D:\MyDevelop\BlogApp.Data\bin\Debug\BlogApp.Data.dll.config
+D:\MyDevelop\BlogApp.Data\bin\Debug\BlogApp.Data.dll
+D:\MyDevelop\BlogApp.Data\bin\Debug\BlogApp.Data.pdb
+D:\MyDevelop\BlogApp.Data\bin\Debug\EntityFramework.dll
+D:\MyDevelop\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyDevelop\BlogApp.Data\bin\Debug\EntityFramework.xml
+D:\MyDevelop\BlogApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.csprojAssemblyReference.cache
+D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CoreCompileInputs.cache
+D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.csproj.CopyComplete
+D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.dll
+D:\MyDevelop\BlogApp.Data\obj\Debug\BlogApp.Data.pdb
