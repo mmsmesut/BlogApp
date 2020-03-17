@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BlogApp.Data.Manager
 {
-    public class ArticleManager : BaseManager
+    public  class ArticleManager : BaseManager
     {
 
 

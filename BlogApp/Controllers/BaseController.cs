@@ -30,17 +30,16 @@ namespace BlogApp.Controllers
         //}
 
 
-        private DataService _Service;
+        private static DataService _Service;
 
-        protected DataService Service {
+        public static DataService Service {
             get {
-                if (_Service == null) 
-                    _Service = new DataService() { };
-                    return _Service;
+                if (_Service == null) {
+                    _Service = new DataService();
+                }
+                return _Service;
             }
-            set {
-                _Service = value;
-            }
+            
         }
 
 

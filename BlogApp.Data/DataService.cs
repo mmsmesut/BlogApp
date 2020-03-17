@@ -14,7 +14,7 @@ namespace BlogApp.Data
         public int UserId { get; set; }
 
 
-        private BlogModelDbContext _Context;
+        private static BlogModelDbContext _Context;
 
         public static string ConnectionStringName {
 
@@ -48,8 +48,8 @@ namespace BlogApp.Data
         }
 
 
-        private ArticleManager _ArticleManager;
-        public ArticleManager ArticleManager {
+        private  ArticleManager _ArticleManager;
+        public  ArticleManager ArticleManager {
             get 
                 {
                 if (_ArticleManager == null)
