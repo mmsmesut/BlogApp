@@ -7,9 +7,15 @@
         @foreach (Article article in Model)
         {
             <li>
-                <div class="icon-overlay"> <a href="blog-post.html">
-                    <img src="style/images/art/a1.jpg" alt="" /> </a> 
-                </div>
+                <div class="icon-overlay">
+                    <a href="blog-post.html">
+                        @if (@article.Image != null)
+                        {
+                            <img src="@article.Image.SmalSize" alt="" />
+
+                        }
+                    </a>
+                    </div>
                 <div class="meta">
                     <h5><a href="blog-post.html">@article.Header</a></h5>
                     <em>@article.CreateDate.ToShortDateString()<span class="comments">

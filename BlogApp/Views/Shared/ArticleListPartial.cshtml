@@ -9,7 +9,10 @@
                 <figure>
                     <a href="/Article/Detail/@article.ArticleId">
                         <div class="text-overlay"><div class="info"><span>Daha Fazla</span></div></div>
-                        @if (@article.Image != null){<img src="@article.Image.MediumSize" alt="" />}
+                        @if (@article.Image != null)
+                        {
+                            <img src="@article.Image.MediumSize" alt="" />
+                        }
                     </a>
                 </figure>
             </div>

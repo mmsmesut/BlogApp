@@ -113,6 +113,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\blog.html" />
+    <Content Include="Content\Images\Article\Large\MVCL.png" />
+    <Content Include="Content\Images\Article\Large\VTabaniL.jpg" />
+    <Content Include="Content\Images\Article\Medium\MVCM.png" />
+    <Content Include="Content\Images\Article\Medium\VTabaniM.jpg" />
+    <Content Include="Content\Images\Article\Small\MVCS.png" />
+    <Content Include="Content\Images\Article\Small\VTabaniS.jpg" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style\css\blank.html" />
     <Content Include="Content\style\css\bootstrap.min.css" />
@@ -379,6 +385,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\Author\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

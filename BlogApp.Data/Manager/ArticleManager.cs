@@ -18,15 +18,38 @@ namespace BlogApp.Data.Manager
 
 
         public List<Article> GetArticles()
-        {        
-            return _Context.Database.SqlQuery<Article>("Select * from Article ").ToList();
+        {
+            //string sqlQuery = @"Select * from Article ";
+
+            var data = _Context.Articles.ToList();
+            
+
+            return data;
         }
 
 
         public List<Article> GetPopularArticles() {
-            //return _Context.Articles.OrderByDescending(x => x.CreateDate).Take(4).ToList();
+            
+            //1.Yöntem
+            //var data = _Context.Articles.OrderByDescending(x => x.CreateDate).Take(5).ToList();
 
-            return _Context.Database.SqlQuery<Article>("Select * from Article").ToList();
+
+            //2.Yöntem 
+            string sqlQuery = @"
+            Select a.* , i.LargeSize,i.SmalSize,i.LargeSize from Article a
+            inner join [Image] i
+            on a.ImageId = i.ImageId";
+
+            var data = _Context.Database.SqlQuery<Article>(sqlQuery).ToList();
+
+            var images = _Context.Database.SqlQuery<Image>("Select * from Image").ToList();
+
+            foreach (Article a in data)
+            {
+                a.Image = images.Where(_ => _.ImageId == a.ImageId).FirstOrDefault();
+            }
+            
+            return data;
         }
 
         public List<Article> GetArticlesByCategory(ArticleFilter filter=null) {
